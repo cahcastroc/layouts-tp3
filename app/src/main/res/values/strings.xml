@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tp3_layout</string>
+    <string name="profile_icon">Profile icon</string>
+    <string name="nome_completo">Nome Completo</string>
+</resources>
