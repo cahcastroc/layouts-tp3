@@ -11,9 +11,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="319dp"
+        android:contentDescription="@string/logo"
         app:srcCompat="@drawable/logo" />
 
     <EditText
@@ -21,15 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:autoText="true"
         android:autofillHints=""
         android:background="@drawable/retangulo"
         android:backgroundTint="#9AFFFFFF"
-        android:capitalize="words"
         android:drawableStart="@drawable/iconname"
-        android:editable="false"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:includeFontPadding="false"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
@@ -48,10 +46,11 @@
         android:backgroundTint="#9AFFFFFF"
         android:drawableStart="@drawable/iconemail"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
-        android:textColorHint="#59232121" />
+        android:textColorHint="#59232121"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btLogin"
@@ -59,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:backgroundTint="#B7DAA8"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:textColor="#464444" />
 
 </LinearLayout>

@@ -12,6 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,6 +21,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="188dp"
+            android:contentDescription="@string/logo"
             app:srcCompat="@drawable/logo" />
 
         <TextView
@@ -33,7 +35,7 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="60dp">
+            android:layout_marginTop="30dp">
 
             <TableRow
                 android:layout_width="337dp"
@@ -75,10 +77,11 @@
                 <EditText
                     android:id="@+id/etRow1"
                     android:layout_width="53dp"
-                    android:layout_height="37dp"
+                    android:layout_height="48dp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
 
@@ -122,10 +125,11 @@
                 <EditText
                     android:id="@+id/etRow2"
                     android:layout_width="53dp"
-                    android:layout_height="37dp"
+                    android:layout_height="48sp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
 
@@ -168,10 +172,11 @@
                 <EditText
                     android:id="@+id/etRow3"
                     android:layout_width="53dp"
-                    android:layout_height="37dp"
+                    android:layout_height="48dp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
 
@@ -187,7 +192,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
 
         </TableLayout>
@@ -196,8 +201,15 @@
             android:id="@+id/btResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Resultado" />
+            android:layout_marginTop="20dp"
+            android:text="@string/enviar_resultado" />
+
+        <Button
+            android:id="@+id/btRandom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/recome_ar" />
 
     </LinearLayout>
 

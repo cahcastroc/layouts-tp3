@@ -21,9 +21,12 @@ class MainActivity : AppCompatActivity() {
             if (validated(etName, etEmail)) {
 
                 val name = etName.text.toString()
+                val email = etEmail.text.toString()
                 val tableIntent = Intent(this, TableActivity::class.java)
 
+
                 tableIntent.putExtra("Name", name)
+                tableIntent.putExtra("Email",email)
 
                 startActivity(tableIntent)
 

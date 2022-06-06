@@ -9,8 +9,108 @@
     tools:context=".ResultActivity">
 
     <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/resultado"
+        android:textAlignment="center"
+        android:textColor="#2B533C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/tvTop"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="113dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvNameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTop"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="111dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="@string/nomee"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvEmailResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameIntent"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="@string/e_maill"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvEmailIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailResult"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="@string/textview"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmailIntent"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="@string/pontua_o"
+        android:textSize="16sp" />
+
+    <TextView
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_below="@+id/tvScore"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvNameIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameResult"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/ivLogo"
+        android:text="@string/textview"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/ivLogo"
+        android:layout_alignTop="@id/ivLogo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/compartilhar_resultado" />
+
 </RelativeLayout>
