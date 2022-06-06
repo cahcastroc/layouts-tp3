@@ -9,24 +9,196 @@
     tools:context=".TableActivity">
 
     <LinearLayout
-        android:layout_width="310dp"
-        android:layout_height="208dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="188dp"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <TableRow
+                android:layout_width="337dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <EditText
+                    android:id="@+id/etRow1"
+                    android:layout_width="53dp"
+                    android:layout_height="37dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <EditText
+                    android:id="@+id/etRow2"
+                    android:layout_width="53dp"
+                    android:layout_height="37dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:backgroundTint="#9C43882D"
+                    android:padding="5dp"
+                    android:text="TextView" />
+
+                <EditText
+                    android:id="@+id/etRow3"
+                    android:layout_width="53dp"
+                    android:layout_height="37dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Resultado" />
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

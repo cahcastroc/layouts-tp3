@@ -11,11 +11,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="387dp"
-        android:layout_height="161dp"
-        android:contentDescription="@string/profile_icon"
-        app:srcCompat="@drawable/perfil" />
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="319dp"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/etName"
@@ -30,7 +29,7 @@
         android:drawableStart="@drawable/iconname"
         android:editable="false"
         android:ems="10"
-        android:hint="@string/nome_completo"
+        android:hint="Nome"
         android:includeFontPadding="false"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
@@ -54,41 +53,13 @@
         android:paddingStart="10dp"
         android:textColorHint="#59232121" />
 
-    <EditText
-        android:id="@+id/etPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/retangulo"
-        android:backgroundTint="#9AFFFFFF"
-        android:drawableStart="@drawable/icontel"
-        android:ems="10"
-        android:hint="Telefone"
-        android:inputType="phone"
-        android:paddingStart="10dp"
-        android:textColorHint="#59232121" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/retangulo"
-        android:backgroundTint="#9AFFFFFF"
-        android:drawableStart="@drawable/iconsenha"
-        android:ems="10"
-        android:hint="Crie uma senha"
-        android:inputType="textPassword"
-        android:paddingStart="10dp"
-        android:textColorHint="#59232121" />
-
     <Button
-        android:id="@+id/btRegister"
+        android:id="@+id/btLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:backgroundTint="#B7DAA8"
-        android:text="Cadastrar"
+        android:text="Entrar"
         android:textColor="#464444" />
 
 </LinearLayout>

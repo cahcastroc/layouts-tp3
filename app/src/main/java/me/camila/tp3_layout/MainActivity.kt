@@ -15,21 +15,19 @@ class MainActivity : AppCompatActivity() {
 
         val etName = this.findViewById<EditText>(R.id.etName)
         val etEmail = this.findViewById<EditText>(R.id.etEmail)
-        val etPhone = this.findViewById<EditText>(R.id.etPhone)
-        val etPassword = this.findViewById<EditText>(R.id.etPassword)
-        val btRegister = this.findViewById<Button>(R.id.btRegister)
+        val btLogin = this.findViewById<Button>(R.id.btLogin)
 
-        btRegister.setOnClickListener {
-            if(validated(etName, etEmail,etPhone,etPassword)){
+        btLogin.setOnClickListener {
+            if (validated(etName, etEmail)) {
 
                 val name = etName.text.toString()
-                val tableIntent = Intent(this,TableActivity::class.java)
+                val tableIntent = Intent(this, TableActivity::class.java)
 
-                tableIntent.putExtra("Name",name)
+                tableIntent.putExtra("Name", name)
 
                 startActivity(tableIntent)
 
-            }else{
+            } else {
                 Toast.makeText(this, "Todos os campos são obrigatórios", Toast.LENGTH_LONG).show()
             }
 
@@ -37,10 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun validated(name: EditText, email: EditText, phone: EditText, password: EditText): Boolean {
-        return name.text.isNotBlank() &&
-                email.text.isNotBlank() &&
-                phone.text.isNotBlank() &&
-                password.text.isNotBlank()
-        }
+    private fun validated(name: EditText, email: EditText): Boolean {
+        return name.text.isNotBlank() && email.text.isNotBlank()
+
     }
+}
