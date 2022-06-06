@@ -4,10 +4,6 @@
     Aplicação referente ao TP3 da disciplina Desenvolvimento de Interfaces Android apresentada ao curso de Análise e Desenvolvimento de Sistemas, do Instituto INFNET.
 </h3>
 
-<h4> 
-    O objetivo da aplicação é demonstrar os conhecimentos de layouts, assim cada activity possui a sua estrutura view 
-</h4>
-
 
 ## O aplicativo utiliza três Activitys para demonstrar as exigências de layouts:
 
