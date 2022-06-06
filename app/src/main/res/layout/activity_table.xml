@@ -76,7 +76,7 @@
 
                 <EditText
                     android:id="@+id/etRow1"
-                    android:layout_width="53dp"
+                    android:layout_width="60dp"
                     android:layout_height="48dp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
@@ -124,7 +124,7 @@
 
                 <EditText
                     android:id="@+id/etRow2"
-                    android:layout_width="53dp"
+                    android:layout_width="60dp"
                     android:layout_height="48sp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
@@ -171,7 +171,7 @@
 
                 <EditText
                     android:id="@+id/etRow3"
-                    android:layout_width="53dp"
+                    android:layout_width="60dp"
                     android:layout_height="48dp"
                     android:background="@android:drawable/editbox_background"
                     android:ems="10"
@@ -179,20 +179,6 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
 
 
         </TableLayout>
